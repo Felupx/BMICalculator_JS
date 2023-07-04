@@ -108,6 +108,12 @@ body {
     padding: 0.5rem 0;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#calculate:hover {
+    
+    transform: scale(1.03);
 }
 
 #result {
@@ -169,7 +175,15 @@ body {
 @media screen and (max-width: 1024px) {
     #img {
         display: none;
-    }    
+    }
+    
+    #calculate {
+        transition: none;
+    }
+
+    #calculate:hover {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
